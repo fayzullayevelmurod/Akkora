@@ -222,4 +222,51 @@ header nav .nav_item a:hover svg path {
   font-weight: 600;
   line-height: 29px;
   text-align: center;
+}
+
+.featured_products {
+  margin-bottom: 110px;
+}
+.featured_products .main_title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.featured_products .featured_products_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.featured_products .featured_products_card {
+  width: calc(16.6666666667% - 17px);
+}
+.featured_products .featured_products_card h5 {
+  color: rgb(57, 78, 103);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.featured_products .featured_products_card h6 {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 20px 0;
+}
+.featured_products .featured_products_card p {
+  color: rgb(57, 78, 103);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  height: 76px;
+}
+.featured_products .featured_products_card button {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: rgb(6, 138, 208);
 }/*# sourceMappingURL=style.css.map */
