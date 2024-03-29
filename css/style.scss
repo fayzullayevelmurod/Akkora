@@ -337,5 +337,35 @@ header {
             background: rgb(6, 138, 208);
         }
     }
+
+    .featured_products_text {
+        color: rgb(57, 78, 103);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+        margin: 110px 0;
+    }
 }
 // featured_products
+
+// store
+.store {
+    margin-bottom: 110px;
+    .main_title {
+        margin-bottom: 40px;
+    }
+
+    .store_text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p {
+            color: rgb(57, 78, 103);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+        }
+    }
+}
+// store
