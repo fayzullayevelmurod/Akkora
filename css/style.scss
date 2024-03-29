@@ -86,6 +86,14 @@ address {
     margin: 0 auto;
 }
 
+.main_title {
+    color: rgb(57, 78, 103);
+    font-family: 'Golos Text', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
 // header
 header {
     .header_top {
@@ -226,3 +234,52 @@ header {
     }
 }
 // home
+
+// youtube_block
+.youtube_block {
+    margin: 110px 0;
+
+    iframe {
+        height: 740px;
+        width: 100%;
+    }
+}
+// youtube_block
+
+// products
+.products {
+    margin-bottom: 110px;
+    .main_title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .products_cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .products_card {
+            position: relative;
+            width: calc(100% / 4 - 15px);
+
+            img {
+                width: 100%;
+            }
+
+            h6 {
+                position: absolute;
+                bottom: 55px;
+                left: 50px;
+                right: 50px;
+                color: rgb(255, 255, 255);
+                font-family: Golos Text;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 29px;
+                text-align: center;
+            }
+        }
+    }
+}
+// products
