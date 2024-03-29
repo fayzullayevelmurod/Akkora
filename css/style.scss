@@ -369,3 +369,38 @@ header {
     }
 }
 // store
+
+// catalog_product
+.catalog_product {
+    .main_title {
+        margin-bottom: 40px;
+    }
+
+    ul {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        li {
+            list-style-position: inside;
+            list-style-type: disc;
+
+            a {
+                color: rgb(6, 138, 208);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 140%;
+            }
+        }
+    }
+
+    p {
+        color: rgb(57, 78, 103);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+}
+// catalog_product
