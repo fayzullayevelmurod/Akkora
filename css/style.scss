@@ -191,3 +191,38 @@ header {
     }
 }
 // header
+
+// home
+.home {
+    height: 100vh;
+    background-image: url('../images/home_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    .main_container {
+        height: 100%;
+        flex-direction: column;
+        @include flex-full-center();
+    }
+
+    h1 {
+        max-width: 817px;
+        color: rgb(255, 255, 255);
+        font-family: 'Golos Text',sans-serif;
+        font-size: 64px;
+        font-weight: 800;
+        line-height: 77px;
+        margin-bottom: 25px;
+    }
+
+    h6 {
+        max-width: 534px;
+        color: rgb(255, 255, 255);
+        font-family: 'Golos Text',sans-serif;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 120%;
+    }
+}
+// home
