@@ -85,3 +85,109 @@ address {
     padding: 0 20px;
     margin: 0 auto;
 }
+
+// header
+header {
+    .header_top {
+        padding: 20px 0;
+        @include flex-center();
+        justify-content: space-between;
+    }
+
+    .header_top_left {
+        span, a, h6 {
+            color: rgb(57, 78, 103);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+
+        h6 {
+            margin: 20px 0 10px 0;
+            font-weight: 700;
+        }
+    }
+
+    .header_top_center {
+        @include flex-center();
+        gap: 10px;
+
+        .find_link {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            padding: 8px;
+            background: rgb(28, 82, 181);
+            border-radius: 8px;
+        }
+    }
+
+    .shop_btn { 
+        @include flex-center();
+        gap: 3px;
+        color: rgb(57, 78, 103);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+
+        .shop_btn_icon {
+            position: relative;
+        }
+
+        .shop_btn_number {
+            position: absolute;
+            top: -3px;
+            right: -5px;
+            @include flex-full-center();
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: rgb(6, 138, 208);
+
+            span {
+                color: #fff;
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 22px;
+            }
+        }
+    }
+
+    nav {
+        border-top: 1px solid #EBEDF0FF;
+
+        .nav_link {
+            @include flex-full-center();
+        }
+
+        .nav_item {
+            padding: 24px 17px;
+
+            
+            a {
+                white-space: nowrap;
+                @include flex-center();
+                gap: 3px;
+                color: rgb(57, 78, 103);
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 19px;
+                text-transform: uppercase;
+                @include transition();
+
+                
+                &:hover {
+                    color: rgb(6, 95, 147);
+
+                    svg {
+                        path {
+                            fill: rgb(6, 95, 147);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// header
