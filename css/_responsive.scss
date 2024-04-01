@@ -1,0 +1,160 @@
+@media only screen and (max-width: 1300px) {
+    header {
+        nav {
+            .nav_item {
+                padding: 20px 5px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .main_title {
+        font-size: 25px;
+    }
+
+    header {
+        nav {
+            display: none;
+        }
+
+        .header_top_left {
+            display: none;
+        }
+
+        .header_top {
+            gap: 10px;
+        }
+
+        .shop_btn {
+            white-space: nowrap;
+
+            .shop_btn_icon {
+                flex-shrink: 0;
+            }
+        }
+
+        .header_top_center {
+            width: 100%;
+            justify-content: space-between;
+
+            .find_link {
+                display: none;
+            }
+
+            .header_search {
+                display: none;
+            }
+
+        }
+
+        .burger_btn {
+            margin-left: 50px;
+            display: flex;
+        }
+    }
+
+    .home {
+        height: 100dvh;
+        h1 {
+            font-size: 42px;
+            line-height: 120%;
+        }
+
+        h6 {
+            font-size: 25px;
+        }
+    }
+
+    .youtube_block {
+        margin: 50px 0;
+        iframe {
+            height: 400px;
+        }
+    }
+
+    .products {
+        margin-bottom: 50px;
+
+        .main_title {
+            margin-bottom: 30px;
+        }
+
+        .products_cards {
+            .products_card {
+                width: calc(100% / 2 - 10px);
+            }
+        }
+    }
+
+    .featured_products {
+        margin-bottom: 50px;
+        .main_title {
+            margin-bottom: 30px;
+        }
+
+        .featured_products_cards {
+            .featured_products_card {
+                width: calc(100% / 2 - 10px);
+                text-align: center;
+            }
+        }
+
+        .featured_products_text {
+            margin: 50px 0;
+        }
+    }
+
+    .store {
+        margin-bottom: 50px;
+
+        .main_title {
+            margin-bottom: 30px;
+        }
+
+        .store_text {
+            gap: 15px;
+        }
+    }
+
+    .catalog_product {
+        .main_title {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            margin-bottom: 30px;
+        }
+    }
+
+    .popular_product {
+        padding: 40px 0;
+        margin-top: 50px;
+
+        .popular_product_title {
+            margin-bottom: 30px;
+        }
+    }
+
+    footer {
+        padding: 50px 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .home {
+        h1 {
+            font-size: 35px;
+        }
+    }
+
+    .products {
+        .products_cards {
+            .products_card {
+                width: calc(100%);
+            }
+        }
+    }
+}

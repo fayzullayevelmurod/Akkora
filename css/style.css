@@ -151,6 +151,20 @@ header nav .nav_item a:hover {
 header nav .nav_item a:hover svg path {
   fill: rgb(6, 95, 147);
 }
+header .burger_btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 40px;
+  height: 40px;
+}
+header .burger_btn span {
+  width: 100%;
+  height: 3px;
+  border-radius: 150px;
+  background-color: rgb(6, 95, 147);
+}
 
 .home {
   height: 100vh;
@@ -370,4 +384,214 @@ header nav .nav_item a:hover svg path {
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
+}
+
+footer {
+  position: relative;
+  background: rgb(27, 27, 27);
+  padding: 110px 0;
+}
+footer .footer_top_btn {
+  position: absolute;
+  bottom: 70px;
+  right: 70px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: rgb(57, 78, 103);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .main_container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+footer h6 {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+footer .main_title {
+  color: rgb(57, 78, 103);
+  font-size: 32px;
+  line-height: 38px;
+  max-width: 270px;
+  margin-bottom: 20px;
+}
+footer .footer_block {
+  flex: 1;
+}
+footer .footer_top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+}
+footer .footer_top ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer_top li a {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+footer .footer_top li a span {
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+}
+footer .footer_top .footer_text_top {
+  margin-bottom: 20px;
+}
+footer .footer_top p {
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+footer .footer_top .footer_phone {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+footer .footer_bottom {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+}
+footer .footer_bottom ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer_bottom ul li a {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 1300px) {
+  header nav .nav_item {
+    padding: 20px 5px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .main_title {
+    font-size: 25px;
+  }
+  header nav {
+    display: none;
+  }
+  header .header_top_left {
+    display: none;
+  }
+  header .header_top {
+    gap: 10px;
+  }
+  header .shop_btn {
+    white-space: nowrap;
+  }
+  header .shop_btn .shop_btn_icon {
+    flex-shrink: 0;
+  }
+  header .header_top_center {
+    width: 100%;
+    justify-content: space-between;
+  }
+  header .header_top_center .find_link {
+    display: none;
+  }
+  header .header_top_center .header_search {
+    display: none;
+  }
+  header .burger_btn {
+    margin-left: 50px;
+    display: flex;
+  }
+  .home {
+    height: 100dvh;
+  }
+  .home h1 {
+    font-size: 42px;
+    line-height: 120%;
+  }
+  .home h6 {
+    font-size: 25px;
+  }
+  .youtube_block {
+    margin: 50px 0;
+  }
+  .youtube_block iframe {
+    height: 400px;
+  }
+  .products {
+    margin-bottom: 50px;
+  }
+  .products .main_title {
+    margin-bottom: 30px;
+  }
+  .products .products_cards .products_card {
+    width: calc(50% - 10px);
+  }
+  .featured_products {
+    margin-bottom: 50px;
+  }
+  .featured_products .main_title {
+    margin-bottom: 30px;
+  }
+  .featured_products .featured_products_cards .featured_products_card {
+    width: calc(50% - 10px);
+    text-align: center;
+  }
+  .featured_products .featured_products_text {
+    margin: 50px 0;
+  }
+  .store {
+    margin-bottom: 50px;
+  }
+  .store .main_title {
+    margin-bottom: 30px;
+  }
+  .store .store_text {
+    gap: 15px;
+  }
+  .catalog_product .main_title {
+    margin-bottom: 30px;
+  }
+  .catalog_product ul {
+    margin-bottom: 30px;
+  }
+  .popular_product {
+    padding: 40px 0;
+    margin-top: 50px;
+  }
+  .popular_product .popular_product_title {
+    margin-bottom: 30px;
+  }
+  footer {
+    padding: 50px 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .home h1 {
+    font-size: 35px;
+  }
+  .products .products_cards .products_card {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
