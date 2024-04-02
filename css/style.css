@@ -495,6 +495,28 @@ header .burger_btn span {
   line-height: 140%;
 }
 
+.laboratory_in {
+  padding: 40px 0 60px 0;
+}
+.laboratory_in p {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 20px;
+}
+.laboratory_in .laboratory_in_links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.laboratory_in .laboratory_in_links a {
+  color: rgb(6, 138, 208);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 footer {
   position: relative;
   background: rgb(27, 27, 27);
@@ -709,10 +731,32 @@ footer .footer_bottom ul li a {
   .brand_in {
     padding: 20px 0 0 0;
   }
+  .brand_in .brand_in_search label {
+    font-size: 14px;
+  }
   .brand_in .brand_in_list {
     margin-bottom: 20px;
   }
+  .brand_in .brand_in_list li {
+    padding: 10px;
+    gap: 5px;
+  }
+  .brand_in .brand_in_list li a {
+    font-size: 12px;
+  }
   .brand_in span {
+    font-size: 14px;
+  }
+  .laboratory_in {
+    padding: 30px 0 0 0;
+  }
+  .laboratory_in p {
+    font-size: 14px;
+  }
+  .laboratory_in .laboratory_in_links {
+    gap: 5px;
+  }
+  .laboratory_in .laboratory_in_links a {
     font-size: 14px;
   }
   footer {
@@ -726,15 +770,8 @@ footer .footer_bottom ul li a {
   }
 }
 @media only screen and (max-width: 850px) {
-  .brand_in .brand_in_search label {
-    font-size: 14px;
-  }
-  .brand_in .brand_in_list li {
-    padding: 10px;
-    gap: 5px;
-  }
-  .brand_in .brand_in_list li a {
-    font-size: 12px;
+  .main_home .home_title {
+    padding: 95px 0;
   }
   footer .main_container {
     display: flex;
