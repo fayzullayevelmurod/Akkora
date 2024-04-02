@@ -26,6 +26,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
+  background: rgb(250, 251, 252);
 }
 
 input {
@@ -424,6 +425,76 @@ header .burger_btn span {
   padding: 195px 0;
 }
 
+.brand_in {
+  padding: 40px 0 110px 0;
+}
+.brand_in .brand_in_search {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.brand_in .brand_in_search label {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.brand_in .brand_in_search input {
+  padding: 5px 10px;
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+}
+.brand_in .brand_in_search input:focus {
+  border: 1px solid rgb(57, 78, 103);
+}
+.brand_in .brand_in_list {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  border-top: 30px solid rgba(45, 147, 180, 0.3);
+}
+.brand_in .brand_in_list li {
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(57, 78, 103, 0.3);
+}
+.brand_in .brand_in_list li a {
+  flex: 1;
+  color: rgb(6, 138, 208);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.brand_in .brand_in_list li .black_link {
+  color: rgb(57, 78, 103);
+}
+.brand_in .brand_in_list li:first-child {
+  border-top: 1px solid rgb(57, 78, 103);
+}
+.brand_in .brand_in_list li:nth-child(odd) {
+  background: rgb(250, 251, 252);
+}
+.brand_in .brand_in_list li:nth-child(even) {
+  background: rgba(57, 78, 103, 0.1);
+}
+.brand_in span {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 footer {
   position: relative;
   background: rgb(27, 27, 27);
@@ -635,6 +706,15 @@ footer .footer_bottom ul li a {
   .popular_product .popular_product_title {
     margin-bottom: 30px;
   }
+  .brand_in {
+    padding: 20px 0 0 0;
+  }
+  .brand_in .brand_in_list {
+    margin-bottom: 20px;
+  }
+  .brand_in span {
+    font-size: 14px;
+  }
   footer {
     padding: 50px 0;
   }
@@ -646,6 +726,16 @@ footer .footer_bottom ul li a {
   }
 }
 @media only screen and (max-width: 850px) {
+  .brand_in .brand_in_search label {
+    font-size: 14px;
+  }
+  .brand_in .brand_in_list li {
+    padding: 10px;
+    gap: 5px;
+  }
+  .brand_in .brand_in_list li a {
+    font-size: 12px;
+  }
   footer .main_container {
     display: flex;
     flex-direction: row;
