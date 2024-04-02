@@ -629,6 +629,32 @@ header {
 }
 // laboratory_in
 
+// certificates
+.certificates {
+    padding: 40px 0 60px 0;
+
+    h6 {
+        color: rgb(57, 78, 103);
+        font-family: 'Golos Text',sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 29px;
+        margin-bottom: 18px;
+    }
+
+    .certificates_cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+
+        .certificates_card {
+            width: calc(100% / 4 - 15px);
+        }
+    }
+}
+// certificates
+
 // footer
 footer {
     position: relative;

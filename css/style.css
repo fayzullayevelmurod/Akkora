@@ -517,6 +517,26 @@ header .burger_btn span {
   line-height: 140%;
 }
 
+.certificates {
+  padding: 40px 0 60px 0;
+}
+.certificates h6 {
+  color: rgb(57, 78, 103);
+  font-family: "Golos Text", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-bottom: 18px;
+}
+.certificates .certificates_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.certificates .certificates_cards .certificates_card {
+  width: calc(25% - 15px);
+}
+
 footer {
   position: relative;
   background: rgb(27, 27, 27);
@@ -759,6 +779,9 @@ footer .footer_bottom ul li a {
   .laboratory_in .laboratory_in_links a {
     font-size: 14px;
   }
+  .certificates .certificates_cards .certificates_card {
+    width: calc(33.3333333333% - 15px);
+  }
   footer {
     padding: 50px 0;
   }
@@ -772,6 +795,12 @@ footer .footer_bottom ul li a {
 @media only screen and (max-width: 850px) {
   .main_home .home_title {
     padding: 95px 0;
+  }
+  .certificates .certificates_cards {
+    gap: 10px;
+  }
+  .certificates .certificates_cards .certificates_card {
+    width: calc(50% - 5px);
   }
   footer .main_container {
     display: flex;
