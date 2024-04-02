@@ -537,6 +537,93 @@ header .burger_btn span {
   width: calc(25% - 15px);
 }
 
+.privacy_policy h6 {
+  color: rgb(57, 78, 103);
+  font-family: "Golos Text", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  margin: 40px 0 30px 0;
+}
+.privacy_policy ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.privacy_policy ul li {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.contact {
+  padding: 110px 0 0 0;
+}
+.contact .main_title {
+  margin-bottom: 30px;
+}
+.contact .contact_phone {
+  margin: 30px 0;
+}
+.contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact ul li {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.contact ul a {
+  color: rgb(57, 78, 103);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.contact .email_link {
+  display: block;
+  margin-bottom: 40px;
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.contact iframe {
+  width: 100%;
+  height: 540px;
+  margin-bottom: 30px;
+}
+.contact h6 {
+  text-align: center;
+  color: rgb(57, 78, 103);
+  font-family: "Golos Text", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 40px;
+}
+.contact .clock h5 {
+  color: rgb(57, 78, 103);
+  font-family: "Golos Text", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contact .clock li {
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 footer {
   position: relative;
   background: rgb(27, 27, 27);
@@ -782,6 +869,44 @@ footer .footer_bottom ul li a {
   .certificates .certificates_cards .certificates_card {
     width: calc(33.3333333333% - 15px);
   }
+  .contact {
+    padding: 50px 0 0 0;
+  }
+  .contact .main_title {
+    margin-bottom: 15px;
+  }
+  .contact ul {
+    gap: 5px;
+  }
+  .contact ul li {
+    font-size: 14px;
+  }
+  .contact ul li a {
+    font-size: 14px;
+  }
+  .contact iframe {
+    height: 400px;
+  }
+  .contact .contact_phone {
+    margin: 15px 0;
+  }
+  .contact .email_link {
+    margin-bottom: 20px;
+  }
+  .contact h6 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    line-height: 140%;
+  }
+  .contact h5 {
+    font-size: 18px;
+  }
+  .contact .clock {
+    font-size: 14px;
+  }
+  .contact .clock li {
+    margin-top: 5px;
+  }
   footer {
     padding: 50px 0;
   }
@@ -802,6 +927,16 @@ footer .footer_bottom ul li a {
   .certificates .certificates_cards .certificates_card {
     width: calc(50% - 5px);
   }
+  .privacy_policy h6 {
+    margin: 20px 0 10px 0;
+    font-size: 20px;
+  }
+  .privacy_policy ul {
+    gap: 5px;
+  }
+  .privacy_policy ul li {
+    font-size: 14px;
+  }
   footer .main_container {
     display: flex;
     flex-direction: row;
@@ -816,6 +951,9 @@ footer .footer_bottom ul li a {
     font-size: 35px;
   }
   .youtube_block iframe {
+    height: 250px;
+  }
+  .contact iframe {
     height: 250px;
   }
   .products .products_cards .products_card {

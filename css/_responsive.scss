@@ -206,6 +206,55 @@
         }
     }
 
+    .contact {
+        padding: 50px 0 0 0;
+
+        .main_title {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            gap: 5px;
+            li {
+                font-size: 14px;
+                
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        iframe {
+            height: 400px;
+        }
+
+        .contact_phone {
+            margin: 15px 0;
+        }
+
+        .email_link {
+            margin-bottom: 20px;
+        }
+
+        h6 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            line-height: 140%;
+        }
+
+        h5 {
+            font-size: 18px;
+        }
+
+        .clock  {
+            font-size: 14px;
+
+            li {
+                margin-top: 5px;
+            }
+        }
+    }
+
     footer {
         padding: 50px 0;
 
@@ -238,6 +287,21 @@
         }
     }
 
+    .privacy_policy {
+        h6 {
+            margin: 20px 0 10px 0;
+            font-size: 20px;
+        }
+
+        ul {
+            gap: 5px;
+
+            li {
+                font-size: 14px;
+            }
+        }
+    }
+
     footer {
         .main_container {
             display: flex;
@@ -260,6 +324,12 @@
     }
 
     .youtube_block {
+        iframe {
+            height: 250px;
+        }
+    }
+
+    .contact {
         iframe {
             height: 250px;
         }
