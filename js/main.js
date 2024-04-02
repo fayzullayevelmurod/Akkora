@@ -9,7 +9,7 @@ var swiper = new Swiper(".popular_productSwiper", {
             slidesPerView: 2,
             spaceBetween: 20,
         },
-        768: {
+        850: {
             slidesPerView: 3,
             spaceBetween: 20,
         },

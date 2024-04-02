@@ -30,6 +30,11 @@
 }
 // mixin
 
+// colors
+$color-blue-white: rgb(6, 138, 208);;
+$color-blue-dark: rgb(6, 95, 147);
+// colors
+
 * {
     margin: 0;
     padding: 0;
@@ -128,6 +133,11 @@ header {
             padding: 8px;
             background: rgb(28, 82, 181);
             border-radius: 8px;
+            @include transition();
+
+            &:hover {
+                background: $color-blue-dark;
+            }
         }
     }
 
@@ -351,6 +361,11 @@ header {
             padding: 12px 24px;
             border-radius: 8px;
             background: rgb(6, 138, 208);
+            @include transition();
+
+            &:hover {
+                background: $color-blue-dark;
+            }
         }
     }
 

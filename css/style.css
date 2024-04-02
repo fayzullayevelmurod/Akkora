@@ -91,6 +91,10 @@ header .header_top_center .find_link {
   padding: 8px;
   background: rgb(28, 82, 181);
   border-radius: 8px;
+  transition: 0.2s ease;
+}
+header .header_top_center .find_link:hover {
+  background: rgb(6, 95, 147);
 }
 header .shop_btn {
   display: flex;
@@ -283,6 +287,10 @@ header .burger_btn span {
   padding: 12px 24px;
   border-radius: 8px;
   background: rgb(6, 138, 208);
+  transition: 0.2s ease;
+}
+.featured_products .featured_products_card button:hover {
+  background: rgb(6, 95, 147);
 }
 .featured_products .featured_products_text {
   color: rgb(57, 78, 103);
@@ -558,6 +566,16 @@ footer .footer_bottom ul li a {
     width: calc(50% - 10px);
     text-align: center;
   }
+  .featured_products .featured_products_cards .featured_products_card h6 {
+    margin: 10px 0;
+  }
+  .featured_products .featured_products_cards .featured_products_card p {
+    height: 95px;
+  }
+  .featured_products .featured_products_cards .featured_products_card button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
   .featured_products .featured_products_text {
     margin: 50px 0;
   }
@@ -575,6 +593,7 @@ footer .footer_bottom ul li a {
   }
   .catalog_product ul {
     margin-bottom: 30px;
+    gap: 5px;
   }
   .popular_product {
     padding: 40px 0;
@@ -586,12 +605,42 @@ footer .footer_bottom ul li a {
   footer {
     padding: 50px 0;
   }
+  footer .main_title {
+    font-size: 25px;
+  }
+  footer h6 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  footer .main_container {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footer_top,
+  footer .footer_bottom {
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 576px) {
   .home h1 {
     font-size: 35px;
   }
+  .youtube_block iframe {
+    height: 250px;
+  }
   .products .products_cards .products_card {
     width: 100%;
+  }
+  footer {
+    padding: 0 0 50px 0;
+  }
+  footer .main_container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .footer_top_btn {
+    bottom: 30px;
+    right: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
