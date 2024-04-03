@@ -80,6 +80,32 @@ address {
   border-radius: 8px;
   background: rgb(6, 138, 208);
   padding: 12px 24px;
+  transition: 0.2s ease;
+}
+.main_btn:hover {
+  background: rgb(6, 95, 147);
+}
+
+.basket_notification {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-radius: 8px;
+  background: rgba(57, 78, 103, 0.05);
+  margin-bottom: 40px;
+}
+.basket_notification .notification_left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.basket_notification span {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
 }
 
 header .header_top {
@@ -698,6 +724,17 @@ header .burger_btn span {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.2s ease;
+  border: 1px solid transparent;
+}
+.articles .articles_pagination a:hover {
+  border: 1px solid rgb(6, 95, 147);
+}
+.articles .articles_pagination .doted {
+  color: rgb(57, 78, 103);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 16px;
 }
 .articles .articles_pagination span {
   color: rgb(57, 78, 103);
@@ -709,21 +746,6 @@ header .burger_btn span {
 
 .basket_empty {
   margin: 110px 0 60px 0;
-}
-.basket_empty .basket_notification {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 29px 20px;
-  border-radius: 8px;
-  background: rgba(57, 78, 103, 0.05);
-  margin-bottom: 40px;
-}
-.basket_empty .basket_notification span {
-  color: rgb(57, 78, 103);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 140%;
 }
 
 footer {
@@ -837,6 +859,15 @@ footer .footer_bottom ul li a {
   .main_btn {
     font-size: 14px;
     padding: 10px 20px;
+  }
+  .basket_notification {
+    height: 60px;
+    margin-bottom: 30px;
+    padding: 15px;
+    gap: 5px;
+  }
+  .basket_notification span {
+    font-size: 14px;
   }
   .main_title {
     font-size: 25px;
@@ -1036,14 +1067,6 @@ footer .footer_bottom ul li a {
   }
   .basket_empty {
     margin: 50px 0 0 0;
-  }
-  .basket_empty .basket_notification {
-    margin-bottom: 30px;
-    padding: 15px;
-    gap: 5px;
-  }
-  .basket_empty .basket_notification span {
-    font-size: 14px;
   }
   footer {
     padding: 50px 0;
