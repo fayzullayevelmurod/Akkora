@@ -109,6 +109,16 @@ address {
     text-align: center;
 }
 
+.main_btn {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    border-radius: 8px;
+    background: rgb(6, 138, 208);
+    padding: 12px 24px;
+}
+
 // header
 header {
     .header_top {
@@ -819,7 +829,7 @@ header {
 
         .active {
             background: rgb(6, 95, 147);
-            
+
             span {
                 color: rgb(255, 255, 255);
             }
@@ -843,6 +853,28 @@ header {
     }
 }
 // articles
+
+// basket_empty
+.basket_empty {
+    margin: 110px 0 60px 0;
+
+    .basket_notification {
+        @include flex-center();
+        gap: 10px;
+        padding: 29px 20px;
+        border-radius: 8px;
+        background: rgba(57, 78, 103, 0.05);
+        margin-bottom: 40px;
+
+        span {
+            color: rgb(57, 78, 103);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+        }
+    }
+}
+// basket_empty
 
 // footer
 footer {

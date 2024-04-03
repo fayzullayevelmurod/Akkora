@@ -72,6 +72,16 @@ address {
   text-align: center;
 }
 
+.main_btn {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  border-radius: 8px;
+  background: rgb(6, 138, 208);
+  padding: 12px 24px;
+}
+
 header .header_top {
   padding: 20px 0;
   display: flex;
@@ -697,6 +707,25 @@ header .burger_btn span {
   text-transform: uppercase;
 }
 
+.basket_empty {
+  margin: 110px 0 60px 0;
+}
+.basket_empty .basket_notification {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 29px 20px;
+  border-radius: 8px;
+  background: rgba(57, 78, 103, 0.05);
+  margin-bottom: 40px;
+}
+.basket_empty .basket_notification span {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 footer {
   position: relative;
   background: rgb(27, 27, 27);
@@ -804,6 +833,10 @@ footer .footer_bottom ul li a {
 @media only screen and (max-width: 1100px) {
   .home_title {
     font-size: 25px;
+  }
+  .main_btn {
+    font-size: 14px;
+    padding: 10px 20px;
   }
   .main_title {
     font-size: 25px;
@@ -1001,6 +1034,17 @@ footer .footer_bottom ul li a {
   .articles .articles_pagination {
     margin-top: 30px;
   }
+  .basket_empty {
+    margin: 50px 0 0 0;
+  }
+  .basket_empty .basket_notification {
+    margin-bottom: 30px;
+    padding: 15px;
+    gap: 5px;
+  }
+  .basket_empty .basket_notification span {
+    font-size: 14px;
+  }
   footer {
     padding: 50px 0;
   }
@@ -1035,6 +1079,9 @@ footer .footer_bottom ul li a {
     width: calc(50% - 10px);
   }
   .articles .articles_card span {
+    font-size: 14px;
+  }
+  .popular_product .popular_product_card h6 {
     font-size: 14px;
   }
   footer .main_container {
