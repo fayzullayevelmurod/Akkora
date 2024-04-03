@@ -6,6 +6,42 @@
             }
         }
     }
+
+    .basket_goods {
+        .basket_goods_in {
+            gap: 40px;
+        }
+
+        .basket_goods_list {
+            .basket_goods_lists_right, 
+            .basket_goods_lists_center {
+                width: 140px;
+            }
+
+            .basket_goods_list_title {
+                .basket_list_title_right, 
+                .basket_list_title_center {
+                    width: 140px;
+                }
+            }
+
+            .quantity {
+                padding: 5px 10px;
+                width: 100px;
+                height: 35px;
+    
+                button {
+                    width: 20px;
+                    height: 20px;
+                    img {
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
+
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -300,6 +336,35 @@
     .basket_empty {
         margin: 50px 0 0 0;
     }
+    
+    .basket_goods {
+        margin: 50px 0 0 0 ;
+
+        .basket_goods_list  {
+            .basket_goods_list_title {
+                margin-bottom: 20px;
+            }
+        }
+
+        .basket_goods_in {
+            flex-direction: column;
+        }
+
+        .basket_goods_list, .amount_orders {
+            width: 100%;
+        }
+
+        .amount_orders {
+            h6 {
+                margin-bottom: 20px;
+            }
+
+            ul {
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+        }
+    }
 
     footer {
         padding: 50px 0;
@@ -361,6 +426,50 @@
         .popular_product_card {
             h6 {
                 font-size: 14px;
+            }
+        }
+    }
+
+    .basket_goods {
+        h6 {
+            font-size: 14px;
+        }
+
+        .basket_goods_in {
+            gap: 30px;
+        }
+
+        .basket_goods_list {
+
+            .basket_goods_lists_left {
+                flex-direction: column;
+                align-items: start;
+                gap: 5px;
+
+                h6 {
+                    font-size: 14px;
+                    line-height: 140%;
+                    span {
+                        margin-top: 5px;
+                    }
+                }
+            }
+            
+            .basket_goods_lists_right, 
+            .basket_goods_lists_center {
+                width: 100px;
+            }
+
+            .basket_goods_lists_right {
+                gap: 10px;
+            }
+
+            .basket_goods_list_title {
+                .basket_list_title_right, 
+                .basket_list_title_center {
+                    width: 100px;
+                }
+
             }
         }
     }
