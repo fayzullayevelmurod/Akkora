@@ -748,6 +748,152 @@ header .burger_btn span {
   margin: 110px 0 60px 0;
 }
 
+.basket_goods {
+  margin: 110px 0 60px 0;
+}
+.basket_goods .basket_goods_in {
+  display: flex;
+  align-items: start;
+  gap: 95px;
+}
+.basket_goods h6 {
+  color: rgb(57, 78, 103);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.basket_goods .basket_goods_list {
+  flex: 2;
+}
+.basket_goods .basket_goods_list .basket_goods_list_title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.basket_goods .basket_goods_list .basket_goods_list_title .basket_list_title_left {
+  flex: 1;
+}
+.basket_goods .basket_goods_list .basket_goods_list_title .basket_list_title_center,
+.basket_goods .basket_goods_list .basket_goods_list_title .basket_list_title_right {
+  width: 213px;
+}
+.basket_goods .basket_goods_list .basket_goods_list_title .basket_list_title_center {
+  margin-left: auto;
+}
+.basket_goods .basket_goods_list .basket_goods_lists {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.basket_goods .basket_goods_list .basket_goods_lists h6 {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.basket_goods .basket_goods_list .basket_goods_lists h6 span {
+  display: block;
+  margin-top: 10px;
+  color: rgb(57, 78, 103);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+.basket_goods .basket_goods_list .basket_goods_list_block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.basket_goods .basket_goods_list .basket_goods_lists_left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+.basket_goods .basket_goods_list .basket_goods_lists_center,
+.basket_goods .basket_goods_list .basket_goods_lists_right {
+  width: 213px;
+}
+.basket_goods .basket_goods_list .basket_goods_lists_center {
+  margin-left: auto;
+}
+.basket_goods .basket_goods_list .quantity {
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 135px;
+  height: 49px;
+  border: 1px solid rgb(6, 138, 208);
+  border-radius: 8px;
+  background: rgb(249, 249, 249);
+}
+.basket_goods .basket_goods_list .quantity span {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.basket_goods .basket_goods_list .quantity button {
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+.basket_goods .basket_goods_list .quantity button:hover {
+  background: rgb(6, 138, 208);
+}
+.basket_goods .basket_goods_list .quantity button:hover svg path {
+  fill: #fff;
+}
+.basket_goods .basket_goods_list .basket_goods_lists_right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.basket_goods .basket_goods_list .basket_goods_lists_right span {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.basket_goods .amount_orders {
+  flex: 1;
+}
+.basket_goods .amount_orders h6 {
+  margin-bottom: 40px;
+}
+.basket_goods .amount_orders ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.basket_goods .amount_orders ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.basket_goods .amount_orders ul span {
+  color: rgb(57, 78, 103);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+}
+.basket_goods .amount_orders .main_btn {
+  text-align: center;
+  width: 100%;
+}
+
 footer {
   position: relative;
   background: rgb(27, 27, 27);
