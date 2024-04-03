@@ -255,6 +255,32 @@
         }
     }
 
+    .articles {
+        margin: 50px 0;
+
+        .main_title {
+            margin-bottom: 30px;
+        }
+
+        .articles_card {
+            padding: 20px;
+            h6 {
+                font-size: 18px;
+                margin: 15px 0 10px;
+                line-height: 140%;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .articles_pagination {
+            margin-top: 30px;
+        }
+    }
+
     footer {
         padding: 50px 0;
 
@@ -302,6 +328,15 @@
         }
     }
 
+    .articles {
+        .articles_card {
+            width: calc(100% / 2 - 10px);
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+
     footer {
         .main_container {
             display: flex;
@@ -332,6 +367,12 @@
     .contact {
         iframe {
             height: 250px;
+        }
+    }
+
+    .articles {
+        .articles_card {
+            width: calc(100%);
         }
     }
 
