@@ -945,6 +945,11 @@ header {
             flex-direction: column;
             gap: 20px;
 
+            .main_btn {
+                margin-top: 20px;
+                display: inline;
+            }
+
             h6 {
                 color: rgb(57, 78, 103);
                 font-size: 16px;

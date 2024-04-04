@@ -787,6 +787,10 @@ header .burger_btn span {
   flex-direction: column;
   gap: 20px;
 }
+.basket_goods .basket_goods_list .basket_goods_lists .main_btn {
+  margin-top: 20px;
+  display: inline;
+}
 .basket_goods .basket_goods_list .basket_goods_lists h6 {
   color: rgb(57, 78, 103);
   font-size: 16px;
@@ -1298,6 +1302,9 @@ footer .footer_bottom ul li a {
   }
   .popular_product .popular_product_card h6 {
     font-size: 14px;
+  }
+  .basket_goods .main_btn {
+    margin-top: 10px;
   }
   .basket_goods h6 {
     font-size: 14px;
