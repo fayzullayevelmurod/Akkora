@@ -274,12 +274,13 @@ header nav .nav_item a:hover svg path {
   fill: rgb(6, 95, 147);
 }
 header .burger_btn {
+  flex-shrink: 0;
   display: none;
   flex-direction: column;
   justify-content: center;
   gap: 4px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 header .burger_btn span {
   width: 100%;
@@ -1040,6 +1041,35 @@ header .burger_btn span {
 .my_account_order .basket_notification {
   margin-bottom: 40px;
 }
+.my_account_order .notification_text_top {
+  margin-bottom: 30px;
+}
+.my_account_order .notification_text {
+  margin-bottom: 20px;
+}
+.my_account_order .my_account_form {
+  margin-bottom: 80px;
+}
+.my_account_order .my_account_inputs {
+  display: flex;
+  gap: 20px;
+}
+.my_account_order .my_account_inputs .my_account_input {
+  flex: 1;
+}
+.my_account_order .main_btn {
+  display: block;
+}
+.my_account_order .password_forgot {
+  margin-top: 10px;
+  display: inline-block;
+  color: rgb(6, 138, 208);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(6, 138, 208);
+}
 .my_account_order h6 {
   color: rgb(57, 78, 103);
   font-size: 18px;
@@ -1516,6 +1546,9 @@ footer .footer_bottom ul li a {
   .my_account_order .my_account_order_in {
     gap: 50px;
   }
+  .my_account_order .my_account_form {
+    margin-bottom: 30px;
+  }
   footer {
     padding: 50px 0;
   }
@@ -1630,6 +1663,10 @@ footer .footer_bottom ul li a {
   .my_account_order .my_account_order_in {
     flex-direction: column;
     gap: 20px;
+  }
+  .my_account_order .my_account_inputs {
+    flex-direction: column;
+    gap: 0;
   }
   footer .main_container {
     display: flex;

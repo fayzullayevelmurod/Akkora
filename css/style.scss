@@ -330,12 +330,13 @@ header {
     }
 
     .burger_btn {
+        flex-shrink: 0;
         display: none;
         flex-direction: column;
         justify-content: center;
         gap: 4px;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
 
         span {
             width: 100%;
@@ -1233,6 +1234,42 @@ header {
 
     .basket_notification {
         margin-bottom: 40px;
+    }
+
+    .notification_text_top {
+        margin-bottom: 30px;
+    }
+
+    .notification_text {
+        margin-bottom: 20px;
+    }
+
+    .my_account_form {
+        margin-bottom: 80px;
+    }
+
+    .my_account_inputs {
+        display: flex;
+        gap: 20px;
+
+        .my_account_input {
+            flex: 1;
+        }
+    }
+
+    .main_btn {
+        display: block;
+    }
+
+    .password_forgot {
+        margin-top: 10px;
+        display: inline-block;
+        color: rgb(6, 138, 208);
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgb(6, 138, 208);
     }
 
     h6 {

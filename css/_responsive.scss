@@ -412,6 +412,12 @@
         }
     }
 
+    .my_account_order {
+        .my_account_form {
+            margin-bottom: 30px;
+        }
+    }
+
     footer {
         padding: 50px 0;
 
@@ -578,6 +584,11 @@
         .my_account_order_in {
             flex-direction: column;
             gap: 20px;
+        }
+
+        .my_account_inputs {
+            flex-direction: column;
+            gap: 0;
         }
     }
 
