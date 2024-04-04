@@ -366,6 +366,14 @@
         }
     }
 
+    .my_account {
+        padding: 50px 0 0 0 ;
+
+        .main_container {
+            gap: 50px;
+        }
+    }
+
     footer {
         padding: 50px 0;
 
@@ -382,6 +390,27 @@
 
 @media only screen and (max-width: 850px) {
 
+    .form_label {
+        font-size: 16px;
+    }
+
+    .form_input {
+        font-size: 15px;
+        padding: 8px 10px;
+    }
+
+    .checkbox_group {
+        margin-top: 10px;
+
+        input {
+            width: 15px;
+            height: 15px;
+        }
+
+        label {
+            font-size: 14px;
+        }
+    }
 
     .main_home {
         .home_title {
@@ -476,6 +505,33 @@
                 }
 
             }
+        }
+    }
+
+    .my_account {
+        .main_container {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .my_account_right,
+        .my_account_left {
+            width: 100%;
+
+            p {
+                margin-bottom: 20px;
+                font-size: 14px;
+            }
+
+            a {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        }
+
+        h6 {
+            margin-bottom: 20px;
+            font-size: 18px;
         }
     }
 

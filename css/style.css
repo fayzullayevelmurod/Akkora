@@ -86,6 +86,75 @@ address {
   background: rgb(6, 95, 147);
 }
 
+.form_label {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.form_label span {
+  color: rgb(255, 0, 0);
+}
+
+.form_input {
+  margin-bottom: 20px;
+  width: 100%;
+  display: block;
+  border: 1px solid transparent;
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  padding: 11px 10px;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+}
+.form_input:focus {
+  border: 1px solid rgb(6, 138, 208);
+}
+
+.input_group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  border: 1px solid transparent;
+  position: relative;
+}
+.input_group input {
+  width: 100%;
+  margin-bottom: 0;
+}
+.input_group img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.checkbox_group {
+  margin-top: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.checkbox_group input {
+  width: 24px;
+  height: 24px;
+  accent-color: rgb(57, 78, 103);
+}
+.checkbox_group label {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 .basket_notification {
   height: 80px;
   display: flex;
@@ -902,6 +971,66 @@ header .burger_btn span {
   width: 100%;
 }
 
+.my_account {
+  padding: 110px 0;
+}
+.my_account .main_container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 130px;
+}
+.my_account .my_account_left,
+.my_account .my_account_right {
+  flex: 1;
+}
+.my_account h6 {
+  color: rgb(57, 78, 103);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-bottom: 40px;
+}
+.my_account .form_label {
+  margin-bottom: 5px;
+}
+.my_account .my_account_left .main_btn {
+  margin-top: 20px;
+  display: block;
+}
+.my_account .my_account_left a {
+  margin-top: 10px;
+  display: inline-block;
+  color: rgb(6, 138, 208);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(6, 138, 208);
+}
+.my_account .my_account_right a {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+.my_account .my_account_right p {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 40px;
+}
+.my_account .my_account_right p a {
+  color: rgb(6, 138, 208);
+  margin: 0;
+}
+.my_account .my_account_right .main_btn {
+  margin: 0;
+  color: #fff;
+}
+
 footer {
   position: relative;
   background: rgb(27, 27, 27);
@@ -1264,6 +1393,12 @@ footer .footer_bottom ul li a {
     gap: 10px;
     margin-bottom: 20px;
   }
+  .my_account {
+    padding: 50px 0 0 0;
+  }
+  .my_account .main_container {
+    gap: 50px;
+  }
   footer {
     padding: 50px 0;
   }
@@ -1275,6 +1410,23 @@ footer .footer_bottom ul li a {
   }
 }
 @media only screen and (max-width: 850px) {
+  .form_label {
+    font-size: 16px;
+  }
+  .form_input {
+    font-size: 15px;
+    padding: 8px 10px;
+  }
+  .checkbox_group {
+    margin-top: 10px;
+  }
+  .checkbox_group input {
+    width: 15px;
+    height: 15px;
+  }
+  .checkbox_group label {
+    font-size: 14px;
+  }
   .main_home .home_title {
     padding: 95px 0;
   }
@@ -1334,6 +1486,28 @@ footer .footer_bottom ul li a {
   .basket_goods .basket_goods_list .basket_goods_list_title .basket_list_title_right,
   .basket_goods .basket_goods_list .basket_goods_list_title .basket_list_title_center {
     width: 100px;
+  }
+  .my_account .main_container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .my_account .my_account_right,
+  .my_account .my_account_left {
+    width: 100%;
+  }
+  .my_account .my_account_right p,
+  .my_account .my_account_left p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .my_account .my_account_right a,
+  .my_account .my_account_left a {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .my_account h6 {
+    margin-bottom: 20px;
+    font-size: 18px;
   }
   footer .main_container {
     display: flex;

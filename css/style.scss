@@ -124,6 +124,77 @@ address {
     }
 }
 
+.form_label {
+    color: rgb(57, 78, 103);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+
+    span {
+        color: rgb(255, 0, 0);
+    }
+}
+
+.form_input {
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+    border: 1px solid transparent;
+    color: rgb(57, 78, 103);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    padding: 11px 10px;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+
+    &:focus {
+        border: 1px solid rgb(6, 138, 208);
+    }
+}
+
+.input_group {
+    @include flex-center();
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    position: relative;
+
+    input {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    img {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+}
+
+.checkbox_group {
+    margin-top: 20px;
+    user-select: none;
+    cursor: pointer;
+    @include flex-center();
+    gap: 10px;
+    margin-bottom: 40px;
+
+    input {
+        width: 24px;
+        height: 24px;
+        accent-color: rgb(57, 78, 103);;
+    }
+
+    label {
+        color: rgb(57, 78, 103);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+    }
+}
+
 .basket_notification {
     height: 80px;
     @include flex-center();
@@ -1076,6 +1147,82 @@ header {
     }
 }
 // basket_goods
+
+// my_account
+.my_account {
+    padding: 110px 0;
+
+    .main_container {
+        @include flex-start();
+        justify-content: space-between;
+        gap: 130px;
+    }
+
+    .my_account_left,
+    .my_account_right {
+        flex: 1;
+    }
+
+    h6 {
+        color: rgb(57, 78, 103);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        margin-bottom: 40px;
+    }
+
+    .form_label {
+        margin-bottom: 5px;
+    }
+
+    .my_account_left {
+
+        .main_btn {
+            margin-top: 20px;
+            display: block;
+        }
+
+        a {
+            margin-top: 10px;
+            display: inline-block;
+            color: rgb(6, 138, 208);
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 16px;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgb(6, 138, 208);
+        }
+    }
+
+    .my_account_right {
+        a {
+            color: rgb(57, 78, 103);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: rgb(57, 78, 103);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+            margin-bottom: 40px;
+
+            a {
+                color: rgb(6, 138, 208);
+                margin: 0;
+            }
+        }
+
+        .main_btn {
+            margin: 0;
+            color: #fff;
+        }
+    }
+}
+// my_account
 
 // footer
 footer {
