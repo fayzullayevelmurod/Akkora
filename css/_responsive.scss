@@ -52,7 +52,7 @@
 
     .main_btn {
         font-size: 14px;
-        padding: 10px 20px;
+        padding: 7px 10px;
     }
 
     .basket_notification {
@@ -374,6 +374,44 @@
         }
     }
 
+    .my_account_order {
+        margin: 50px 0 0 0 ;
+
+        .basket_notification {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            li {
+                h6 {
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    font-size: 14px;
+                }
+            }
+
+            .list_bottom_block {
+                margin: 10px 0 15px 0;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        h6 {
+            margin-bottom: 20px;
+        }
+
+        .my_account_order_in {
+            gap: 50px;
+        }
+    }
+
     footer {
         padding: 50px 0;
 
@@ -401,6 +439,7 @@
 
     .checkbox_group {
         margin-top: 10px;
+        margin-bottom: 20px;
 
         input {
             width: 15px;
@@ -535,6 +574,13 @@
         }
     }
 
+    .my_account_order {
+        .my_account_order_in {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
     footer {
         .main_container {
             display: flex;
@@ -593,6 +639,30 @@
         .footer_top_btn {
             bottom: 30px;
             right: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .basket_notification {
+        height: 50px;
+        padding: 10px;
+
+        .notification_left {
+            gap: 5px;
+        }
+
+        img {
+            width: 20px;
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+        .main_btn {
+            font-size: 10px;
+            padding: 5px 8px;
         }
     }
 }

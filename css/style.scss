@@ -71,6 +71,7 @@ input {
 }
 
 button {
+    font-family: "Open Sans", sans-serif;
     border: none;
     cursor: pointer;
     background: transparent;
@@ -129,6 +130,7 @@ address {
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
+    margin-bottom: 5px;
 
     span {
         color: rgb(255, 0, 0);
@@ -147,6 +149,7 @@ address {
     padding: 11px 10px;
     border-radius: 4px;
     background: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
 
     &:focus {
         border: 1px solid rgb(6, 138, 208);
@@ -1223,6 +1226,109 @@ header {
     }
 }
 // my_account
+
+// my_account_order
+.my_account_order {
+    margin: 110px 0;
+
+    .basket_notification {
+        margin-bottom: 40px;
+    }
+
+    h6 {
+        color: rgb(57, 78, 103);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    .my_account_order_in {
+        display: flex;
+        gap: 130px;
+    }
+
+    .my_account_order_right,
+    .my_account_order_left {
+        flex: 1;
+
+        h6 {
+            color: rgb(57, 78, 103);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+            @include flex-start();
+            gap: 20px;
+            justify-content: space-between;
+        }
+        
+        .cost {
+            white-space: nowrap;
+        }
+
+        span {
+            color: rgb(57, 78, 103);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+        }
+
+        .list_bottom_block {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .list_bottom {
+            margin-bottom: 0;
+        }
+
+        h5 {
+            color: rgb(57, 78, 103);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 25px;
+        }
+    }
+
+    .checkbox_block {
+        @include flex-center();
+        gap: 10px;
+        margin-bottom: 10px;
+
+        input {
+            width: 16px;
+            height: 16px;
+            background: rgb(255, 255, 255);
+            accent-color: rgb(6, 138, 208);
+        }
+
+        label {
+            color: rgb(57, 78, 103);
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 19px;
+            text-transform: uppercase;
+        }
+    }
+
+    p {
+        color: rgb(57, 78, 103);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+        margin-bottom: 40px;
+    }
+}
+// my_account_order
 
 // footer
 footer {
