@@ -1292,13 +1292,19 @@ header .burger_btn span {
 .panel {
   margin: 40px 0 60px 0;
 }
+.panel [data-tab-content] {
+  display: none;
+}
+.panel .active[data-tab-content] {
+  display: block;
+}
 .panel .main_container {
   display: flex;
   align-items: start;
   gap: 54px;
 }
 .panel .panel_menu {
-  width: 296px;
+  min-width: 296px;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
@@ -1307,7 +1313,15 @@ header .burger_btn span {
 .panel .panel_menu .panel_item {
   border-bottom: 1px solid rgba(57, 78, 103, 0.1);
 }
+.panel .panel_menu .active button {
+  color: #fff;
+}
 .panel .panel_menu button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  text-align: left;
   width: 100%;
   padding: 18px 36px;
   display: flex;
@@ -1330,12 +1344,18 @@ header .burger_btn span {
 .panel .panel_menu button:hover svg path {
   fill: rgb(255, 255, 255);
 }
+.panel .panel_menu button:focus {
+  color: #fff;
+}
 .panel .panel_menu .active {
   color: rgb(255, 255, 255);
   background: rgb(28, 82, 181);
 }
 .panel .panel_menu .active svg path {
   fill: rgb(255, 255, 255);
+}
+.panel .tab-content {
+  width: 100%;
 }
 .panel #panel p {
   max-width: 835px;
@@ -1348,6 +1368,29 @@ header .burger_btn span {
 .panel #panel p a {
   display: inline;
   color: rgb(6, 138, 208);
+}
+.panel #address h6 {
+  color: rgb(57, 78, 103);
+  font-family: "Golos Text", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-bottom: 10px;
+}
+.panel #address p {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+.panel #address a {
+  color: rgb(6, 138, 208);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(6, 138, 208);
 }
 
 footer {
