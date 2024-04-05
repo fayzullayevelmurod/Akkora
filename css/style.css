@@ -1289,6 +1289,67 @@ header .burger_btn span {
   border: 1px solid rgb(28, 82, 181);
 }
 
+.panel {
+  margin: 40px 0 60px 0;
+}
+.panel .main_container {
+  display: flex;
+  align-items: start;
+  gap: 54px;
+}
+.panel .panel_menu {
+  width: 296px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.panel .panel_menu .panel_item {
+  border-bottom: 1px solid rgba(57, 78, 103, 0.1);
+}
+.panel .panel_menu button {
+  width: 100%;
+  padding: 18px 36px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(57, 78, 103);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  transition: 0.2s ease;
+}
+.panel .panel_menu button svg {
+  flex-shrink: 0;
+  transition: 0.2s ease;
+}
+.panel .panel_menu button:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(28, 82, 181);
+}
+.panel .panel_menu button:hover svg path {
+  fill: rgb(255, 255, 255);
+}
+.panel .panel_menu .active {
+  color: rgb(255, 255, 255);
+  background: rgb(28, 82, 181);
+}
+.panel .panel_menu .active svg path {
+  fill: rgb(255, 255, 255);
+}
+.panel #panel p {
+  max-width: 835px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  color: rgb(57, 78, 103);
+}
+.panel #panel p a {
+  display: inline;
+  color: rgb(6, 138, 208);
+}
+
 footer {
   position: relative;
   background: rgb(27, 27, 27);
