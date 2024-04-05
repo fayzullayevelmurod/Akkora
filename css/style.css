@@ -1686,6 +1686,13 @@ footer .footer_bottom ul li a {
   .my_account_order .my_account_form {
     margin-bottom: 30px;
   }
+  .one_article {
+    max-width: 100%;
+    margin: 50px 0 20px 0;
+  }
+  .leave_comment {
+    max-width: 100%;
+  }
   footer {
     padding: 50px 0;
   }
@@ -1804,6 +1811,36 @@ footer .footer_bottom ul li a {
   .my_account_order .my_account_inputs {
     flex-direction: column;
     gap: 0;
+  }
+  .one_article h3 {
+    font-size: 20px;
+    line-height: 140%;
+  }
+  .one_article h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .one_article .one_article_list {
+    gap: 5px;
+  }
+  .one_article p, .one_article li {
+    font-size: 14px;
+  }
+  .one_article .breadcrumb {
+    margin-bottom: 20px;
+  }
+  .one_article .one_article_in {
+    flex-direction: column;
+  }
+  .leave_comment {
+    max-width: 100%;
+  }
+  .leave_comment h6 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .leave_comment .form_top {
+    flex-direction: column;
   }
   footer .main_container {
     display: flex;
