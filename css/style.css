@@ -1152,6 +1152,143 @@ header .burger_btn span {
   margin-bottom: 40px;
 }
 
+.one_article {
+  max-width: 914px;
+  margin: 110px auto;
+}
+.one_article h3 {
+  color: rgb(57, 78, 103);
+  font-family: "Golos Text", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+.one_article .breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 40px;
+}
+.one_article .breadcrumb li, .one_article .breadcrumb span, .one_article .breadcrumb a {
+  color: rgb(57, 78, 103);
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.one_article .breadcrumb a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.one_article h5 {
+  color: rgb(57, 78, 103);
+  font-family: "Golos Text", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+.one_article .one_article_in {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.one_article .one_article_left,
+.one_article .one_article_right {
+  flex: 1;
+}
+.one_article .one_article_left img,
+.one_article .one_article_right img {
+  width: 100%;
+}
+.one_article .one_article_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.one_article .one_article_list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.one_article .one_article_list li img {
+  width: 7px;
+  flex-shrink: 0;
+}
+.one_article p, .one_article li {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.one_article p {
+  margin-bottom: 10px;
+}
+.one_article .one_text {
+  margin-top: 10px;
+}
+
+.leave_comment {
+  max-width: 914px;
+  margin: 0 auto;
+}
+.leave_comment h6 {
+  color: rgb(57, 78, 103);
+  font-family: "Golos Text", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+.leave_comment p {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 40px;
+}
+.leave_comment p span {
+  color: rgb(255, 0, 0);
+}
+.leave_comment .form_top {
+  display: flex;
+  gap: 20px;
+}
+.leave_comment .form_top_input {
+  flex: 1;
+}
+.leave_comment .form_top_input input {
+  padding: 11px 10px;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  border: 1px solid transparent;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.leave_comment .form_top_input input:focus {
+  border: 1px solid rgb(28, 82, 181);
+}
+.leave_comment textarea {
+  height: 160px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 11px 10px;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  border: 1px solid transparent;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.leave_comment textarea:focus {
+  outline: none;
+  border: 1px solid rgb(28, 82, 181);
+}
+
 footer {
   position: relative;
   background: rgb(27, 27, 27);
