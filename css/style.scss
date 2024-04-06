@@ -220,8 +220,46 @@ address {
     }
 }
 
+.quantity {
+    padding: 12px 10px;
+    @include flex-center();
+    justify-content: space-between;
+    width: 135px;
+    height: 49px;
+    border: 1px solid rgb(6, 138, 208);
+    border-radius: 8px;
+    background: rgb(249, 249, 249);
+
+    span {
+        width: 24px;
+        height: 24px;
+        @include flex-full-center();
+        color: rgb(57, 78, 103);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    button {
+        @include transition();
+        @include flex-full-center();
+        border-radius: 2px;
+
+        &:hover {
+            background: $color-blue-white;
+
+            svg {
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}
+
 // header
 header {
+    background: #fff;
     .header_top {
         padding: 20px 0;
         @include flex-center();
@@ -1659,6 +1697,32 @@ header {
     }
 }
 // panel
+
+// product_page
+.product_page {
+    margin: 110px 0 110px 0;
+    .breadcrumb {
+        @include flex-center();
+        gap: 10px;
+
+        a {
+            color: rgb(6, 138, 208);
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 16px;
+            text-transform: uppercase;
+        }
+
+        li {
+            color: rgb(57, 78, 103);
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 16px;
+            text-transform: uppercase;
+        }
+    }
+}
+// product_page
 
 // footer
 footer {

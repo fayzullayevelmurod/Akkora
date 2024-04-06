@@ -180,6 +180,45 @@ address {
   line-height: 140%;
 }
 
+.quantity {
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 135px;
+  height: 49px;
+  border: 1px solid rgb(6, 138, 208);
+  border-radius: 8px;
+  background: rgb(249, 249, 249);
+}
+.quantity span {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.quantity button {
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+.quantity button:hover {
+  background: rgb(6, 138, 208);
+}
+.quantity button:hover svg path {
+  fill: #fff;
+}
+
+header {
+  background: #fff;
+}
 header .header_top {
   padding: 20px 0;
   display: flex;
@@ -1391,6 +1430,29 @@ header .burger_btn span {
   line-height: 16px;
   text-transform: uppercase;
   border-bottom: 1px solid rgb(6, 138, 208);
+}
+
+.product_page {
+  margin: 110px 0 110px 0;
+}
+.product_page .breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.product_page .breadcrumb a {
+  color: rgb(6, 138, 208);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.product_page .breadcrumb li {
+  color: rgb(57, 78, 103);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
 }
 
 footer {
