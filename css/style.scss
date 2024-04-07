@@ -230,7 +230,8 @@ address {
     border-radius: 8px;
     background: rgb(249, 249, 249);
 
-    span {
+    input {
+        text-align: center;
         width: 24px;
         height: 24px;
         @include flex-full-center();
@@ -238,6 +239,8 @@ address {
         font-size: 16px;
         font-weight: 400;
         line-height: 140%;
+        border: none;
+        background: transparent;
     }
 
     button {
@@ -1702,6 +1705,14 @@ header {
 .product_page {
     margin: 110px 0 110px 0;
 
+    [data-tab-content] {
+        display: none;
+    }
+      
+    .active[data-tab-content] {
+        display: block;
+    }
+
     .breadcrumb {
         @include flex-center();
         gap: 10px;
@@ -1783,6 +1794,7 @@ header {
     
             .main_btn {
                 width: 100%;
+                height: 49px;
             }
         }
 
@@ -1802,6 +1814,7 @@ header {
                 font-weight: 600;
                 line-height: 16px;
                 text-transform: uppercase;
+                border-bottom: 2px solid transparent;
             }
 
             .active {
@@ -1822,11 +1835,11 @@ header {
             }
             
             p {
+                margin-bottom: 15px;
                 color: rgb(57, 78, 103);
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 140%;
-                margin-bottom: 30px;
             }
         }
 
