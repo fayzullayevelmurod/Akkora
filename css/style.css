@@ -1434,6 +1434,36 @@ header .burger_btn span {
   text-transform: uppercase;
   border-bottom: 1px solid rgb(6, 138, 208);
 }
+.panel #anketa p {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 5px 0 20px 0;
+}
+.panel #anketa h6 {
+  color: rgb(57, 78, 103);
+  font-family: "Golos Text", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  margin: 40px 0 10px 0;
+}
+.panel #anketa .my_account_inputs {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.panel #anketa .my_account_inputs .form_input {
+  margin-bottom: 0;
+}
+.panel #anketa .my_account_inputs .my_account_input {
+  flex: 1;
+}
+.panel #anketa .change_password .my_account_input {
+  margin-bottom: 20px;
+}
 
 .product_page {
   margin: 110px 0 110px 0;

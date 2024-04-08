@@ -1,4 +1,5 @@
-let counter = 1;
+try {
+  let counter = 1;
 
 function increment() {
   counter++;
@@ -27,6 +28,9 @@ dec.addEventListener("click", () => {
   }
   input.value = get();
 });
+} catch (err) {
+  console.log(err);
+}
 
 
 const tabs = document.querySelectorAll('[data-tab-target]');
