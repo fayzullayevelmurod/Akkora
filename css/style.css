@@ -1876,6 +1876,12 @@ footer .footer_bottom ul li a {
   .basket_notification span {
     font-size: 14px;
   }
+  .product_page .breadcrumb {
+    flex-wrap: wrap;
+  }
+  .product_page .breadcrumb li {
+    white-space: nowrap;
+  }
   .main_title {
     font-size: 25px;
   }
@@ -2148,6 +2154,74 @@ footer .footer_bottom ul li a {
   }
   .panel .panel_menu button svg {
     width: 25px;
+  }
+  .product_page {
+    margin: 50px 0;
+  }
+  .product_page .product_page_in {
+    flex-direction: column;
+  }
+  .product_page h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .product_page .product_page_right_text {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .product_page h6 {
+    font-size: 16px;
+  }
+  .product_page .product_page_right ul {
+    margin-bottom: 20px;
+    gap: 5px;
+  }
+  .product_page .product_page_right ul li {
+    font-size: 14px;
+  }
+  .product_page .product_tabs #description h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .product_page .product_tabs #description p {
+    font-size: 14px;
+  }
+  .product_page .product_tabs #details span {
+    font-size: 14px;
+  }
+  .product_page .product_tabs #details a {
+    font-size: 14px;
+  }
+  .product_page .product_tabs #reviews h6 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .product_page .product_tabs #reviews .reviews_card {
+    max-width: 95%;
+    padding: 10px;
+  }
+  .product_page .product_tabs #reviews .reviews_card p {
+    font-size: 14px;
+  }
+  .product_page .product_tabs #reviews .reviews_card .reviews_card_top {
+    margin-bottom: 5px;
+  }
+  .product_page .product_tabs #reviews .reviews_card .reviews_card_top .user {
+    gap: 3px;
+    font-size: 14px;
+  }
+  .product_page .product_tabs #reviews .reviews_card .reviews_card_top .user_date {
+    gap: 3px;
+  }
+  .product_page .product_tabs #reviews ul {
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .product_page .product_tabs #reviews img {
+    width: 25px;
+  }
+  .leave_comment .main_container {
+    padding: 0;
   }
   footer {
     padding: 50px 0;
