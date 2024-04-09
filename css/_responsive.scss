@@ -427,6 +427,27 @@
         max-width: 100%;
     }
 
+    .panel {
+
+        .main_container {
+            gap: 30px;
+        }
+
+        .panel_menu {
+            min-width: 230px;
+
+            button {
+                font-size: 16px;
+                padding: 10px 15px;
+
+                svg {
+                    width: 25px;
+                }
+            }
+        }
+
+    }
+
     footer {
         padding: 50px 0;
 
@@ -642,6 +663,39 @@
         .form_top {
             flex-direction: column;
             
+        }
+    }
+
+    .panel {
+
+        .panel_menu {
+            width: 100%;
+        }
+
+        .main_container {
+            flex-direction: column;
+        }
+
+        #address {
+            h6 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+        }
+
+        #anketa {
+            .my_account_inputs {
+                flex-direction: column;
+            }
+
+            h6 {
+                margin: 10px 0;
+                font-size: 18px;
+            }
         }
     }
 
