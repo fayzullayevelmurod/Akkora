@@ -1464,6 +1464,56 @@ header .burger_btn span {
 .panel #anketa .change_password .my_account_input {
   margin-bottom: 20px;
 }
+.panel #order .basket_notification .notification_left h6 {
+  color: rgb(21, 183, 27);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.panel #order .basket_notification .notification_left .notification_left_text {
+  color: rgb(45, 147, 180);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.panel #order .order_in {
+  display: none;
+  border-radius: 8px;
+  background: rgba(57, 78, 103, 0.05);
+  padding: 20px;
+}
+.panel #order .order_in .basket_notification {
+  padding: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  background: transparent !important;
+}
+.panel #order .order_in ul {
+  border-top: 1px solid rgba(57, 78, 103, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+.panel #order .order_in ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.panel #order .order_in ul li span {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.panel #order .order_in ul li h6 {
+  color: rgb(57, 78, 103);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.panel #order .order_in ul .list_end {
+  margin-top: 30px;
+}
 
 .product_page {
   margin: 110px 0 110px 0;
