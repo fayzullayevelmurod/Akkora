@@ -873,6 +873,22 @@
                 width: calc(100%);
             }
         }
+
+        .product_category {
+
+            h6 {
+                font-size: 20px;
+            }
+
+            .box-title {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            .accordion {
+                padding-bottom: 20px;
+            }
+        }
     }
 
     footer {
