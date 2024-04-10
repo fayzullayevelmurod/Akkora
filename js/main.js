@@ -19,12 +19,16 @@ header_media_bg.addEventListener('click', () => {
   header_media.classList.remove('active')
 })
 
-lightGallery(document.getElementById('static-thumbnails'), {
-  animateThumb: false,
-  zoomFromOrigin: false,
-  allowMediaOverlap: true,
-  toggleThumb: true,
-});
+try {
+  lightGallery(document.getElementById('static-thumbnails'), {
+    animateThumb: false,
+    zoomFromOrigin: false,
+    allowMediaOverlap: true,
+    toggleThumb: true,
+  });
+} catch (err) {
+  console.log(err);
+}
 
 
 try {
