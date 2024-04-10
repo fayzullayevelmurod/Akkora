@@ -315,6 +315,76 @@ header nav .nav_item a:hover {
 header nav .nav_item a:hover svg path {
   fill: rgb(6, 95, 147);
 }
+header nav .motor_drop_btn,
+header nav .more_dropdown_btn {
+  position: relative;
+}
+header nav .motor_drop_btn:hover .motor_dropdown,
+header nav .more_dropdown_btn:hover .motor_dropdown {
+  min-height: 200px;
+}
+header nav .motor_drop_btn:hover .more_dropdown,
+header nav .more_dropdown_btn:hover .more_dropdown {
+  height: 100px;
+  z-index: 3;
+}
+header nav .motor_dropdown,
+header nav .more_dropdown {
+  transition: 0.2s ease;
+  overflow: hidden;
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 3;
+  background: rgb(57, 78, 103);
+  border-radius: 4px;
+}
+header nav .motor_dropdown a,
+header nav .more_dropdown a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 20px 10px;
+  border-bottom: 1px dashed #4c5f76;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+header nav .motor_dropdown a svg,
+header nav .more_dropdown a svg {
+  transform: rotate(90deg);
+}
+header nav .motor_dropdown a svg path,
+header nav .more_dropdown a svg path {
+  fill: #fff;
+}
+header nav .motor_dropdown a:last-child,
+header nav .more_dropdown a:last-child {
+  border-bottom: none;
+}
+header nav .more_dropdown {
+  overflow: visible;
+  height: 0;
+  z-index: -1;
+  width: 176px;
+}
+header nav .about_drop_link {
+  position: relative;
+}
+header nav .about_dropdown {
+  width: 210px;
+  position: absolute;
+  right: 105%;
+  top: 0;
+  z-index: -3;
+  background: rgb(57, 78, 103);
+}
+header nav .about_dropdown a {
+  white-space: wrap;
+}
 header .burger_btn {
   flex-shrink: 0;
   display: none;

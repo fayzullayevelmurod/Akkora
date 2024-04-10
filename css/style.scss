@@ -368,6 +368,90 @@ header {
                 }
             }
         }
+
+        .motor_drop_btn,
+        .more_dropdown_btn {
+            position: relative;
+
+            &:hover {
+                
+                .motor_dropdown {
+                    min-height: 200px;
+                }
+
+                .more_dropdown {
+                    height: 100px;
+                    z-index: 3;
+                }
+            }
+        }
+    
+        .motor_dropdown,
+        .more_dropdown {
+            @include transition();
+            overflow: hidden;
+            height: 0;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            z-index: 3;
+            background: rgb(57, 78, 103);
+            border-radius: 4px;
+
+            a {
+                @include flex-center();
+                justify-content: space-between;
+                padding: 10px 10px 20px 10px;
+                border-bottom: 1px dashed #4C5F76FF;
+                width: 100%;
+                color: rgb(255, 255, 255);
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 19px;
+
+                svg {
+                    transform: rotate(90deg);
+                    path {
+                        fill: #fff;
+                    }
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                } 
+            }
+        }
+
+        .more_dropdown {
+            overflow: visible;
+            height: 0;
+            z-index: -1;
+            width: 176px;
+        }
+
+        .about_drop_link {
+            position: relative;
+
+            // &:hover {
+            //     .about_dropdown {
+            //         z-index: 3;
+            //     }
+            // }
+        }
+
+        .about_dropdown {
+            width: 210px;
+            position: absolute;
+            right: 105%;
+            top: 0;
+            z-index: -3;
+            background: rgb(57, 78, 103);
+
+            a {
+                white-space: wrap;
+            }
+        }
+        
     }
 
     .burger_btn {
@@ -386,6 +470,7 @@ header {
             background-color: rgb(6, 95, 147);
         }
     }
+
 }
 // header
 
