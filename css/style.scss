@@ -2068,19 +2068,41 @@ header {
 
 // product_template
 .product_template {
+
+    .main_container {
+        border: 1px solid blue;
+        @include flex-start();
+        gap: 20px;
+    }
+
+    .product_template_left {
+        width: 100%;
+    }
+
     .product_template_title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 35px;
+
+        h6 {
+            color: rgb(57, 78, 103);
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 140%;  
+            text-transform: uppercase;
+        }
+
         .select {
             position: relative;
-            margin-bottom: 15px;
-            width: 250px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         .select .selectBtn {
-            background: var(--bg1);
-            padding: 10px;
-            box-sizing: border-box;
-            border-radius: 3px;
-            width: 100%;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            text-align: left;
+            width: 240px;
+            padding: 12px 40px 12px 24px;
             cursor: pointer;
             position: relative;
             -webkit-user-select: none;
@@ -2088,12 +2110,18 @@ header {
                 -ms-user-select: none;
                     user-select: none;
             background: #fff;
+            color: rgb(57, 78, 103);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+            border-radius: 4px;
         }
+
         .select .selectBtn:after {
             content: "";
             position: absolute;
             top: 45%;
-            right: 15px;
+            right: 20px;
             width: 6px;
             height: 6px;
             -webkit-transform: translateY(-50%) rotate(45deg);
@@ -2102,21 +2130,22 @@ header {
             border-bottom: 2px solid #666;
             transition: 0.2s ease;
         }
-        .select .selectBtn.toggle {
-            border-radius: 3px 3px 0 0;
-        }
+
         .select .selectBtn.toggle:after {
             -webkit-transform: translateY(-50%) rotate(-135deg);
                     transform: translateY(-50%) rotate(-135deg);
         }
+
         .select .selectDropdown {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
             position: absolute;
             top: 100%;
             width: 100%;
-            border-radius: 0 0 3px 3px;
             overflow: hidden;
-            background: var(--bg1);
-            border-top: 1px solid #eee;
+            border: 1px solid rgb(57, 78, 103);
+            border-radius: 8px;
             z-index: 1;
             background: #fff;
             -webkit-transform: scale(1, 0);
@@ -2125,20 +2154,199 @@ header {
                     transform-origin: top center;
             visibility: hidden;
             transition: 0.2s ease;
-            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
         }
+
         .select .selectDropdown .option {
-            padding: 10px;
-            box-sizing: border-box;
+            white-space: nowrap;
+            padding: 2px 35px;
+            text-align: left;
             cursor: pointer;
+            color: rgb(57, 78, 103);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
         }
+
         .select .selectDropdown .option:hover {
-         background: #f8f8f8;
+            background: rgb(57, 78, 103);
+            color: #fff;
         }
+
         .select .selectDropdown.toggle {
             visibility: visible;
             -webkit-transform: scale(1, 1);
                     transform: scale(1, 1);
+        }
+    }
+
+    .product_template_cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .product_template_card {
+            border: 1px solid red;
+            width: calc(100% / 3 - 15px);
+
+            h5 {
+                color: rgb(57, 78, 103);
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 25px;
+            }
+
+            h6 {
+                color: rgb(57, 78, 103);
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 22px;
+                margin: 20px 0;
+            }
+
+            p {
+                color: rgb(57, 78, 103);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 19px;
+                text-transform: uppercase;
+                margin-bottom: 40px;
+            }
+        }
+
+        .product_template_img {
+            position: relative;
+            background: #fff;
+
+            span {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                color: rgb(255, 255, 255);
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 19px;
+                border-radius: 8px;
+                padding: 8px;
+                background: rgb(27, 27, 27);
+            }
+        }
+    }
+
+    .product_category {
+        max-width: 330px;
+        border: 1px solid red;
+
+        h6 {
+            color: rgb(57, 78, 103);
+            font-family: 'Golos Text' ,sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
+            margin-bottom: 18px;
+        }
+
+        .accordion {
+            margin: auto;
+            padding-bottom: 40px;
+
+        }
+
+        .accordion input {
+            display: none;
+        }
+
+        .box {
+            position: relative;
+            background: white;
+            height: auto; 
+            transition: all .15s ease-in-out;
+        }
+
+        header .box-title {
+            margin: 0;
+            font-weight: normal;
+            font-size: 16pt;
+            color: white;
+            cursor: initial;
+        }
+
+        .box-title {
+            margin-bottom: 10px;
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
+        }
+
+        .box-content {
+            margin-bottom: 10px;
+            display: none;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding-left: 20px;
+
+                li {
+                    a {
+                        color: rgb(57, 78, 103);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 140%;
+                    }
+                }
+            }
+        }
+
+        .box-close {
+            position: absolute;
+            height: auto;
+            width: 100%;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+            display: none;
+        }
+
+        input:checked + .box {
+            height: auto;
+            // margin: 1px 0;
+            // box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+        }
+
+        input:checked + .box .box-title {
+            // border-bottom: 1px solid rgba(0,0,0,.18);
+        }
+
+        input:checked + .box .box-content,
+        input:checked + .box .box-close {
+            display: inline-block;
+        }
+
+        .arrows section .box-title {
+            // padding-left: 44px;
+            // width: calc(100% - 64px);
+        }
+
+        // .arrows section .box-title:before {
+        //     position: absolute;
+        //     display: block;
+        //     content: '\203a';
+        //     font-size: 18pt;
+        //     left: 20px;
+        //     top: -2px;
+        //     transition: transform .15s ease-in-out;
+        //     color: rgba(0,0,0,.54);
+        // }
+
+        // input:checked + section.box .box-title:before {
+        //     transform: rotate(90deg);
+        // }
+
+        input:checked + section.box .box-title {
+            color: rgb(28, 82, 181);
         }
     }
 }
