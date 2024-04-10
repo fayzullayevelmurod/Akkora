@@ -1,3 +1,25 @@
+let burger_btn = document.querySelector('.burger_btn');
+let header_media_bg = document.querySelector('.header_media_bg');
+let header_media = document.querySelector('.header_media');
+let header_media_close = document.querySelector('.header_media_close');
+
+
+burger_btn.addEventListener('click', () => {
+  header_media_bg.classList.toggle('active')
+  header_media.classList.toggle('active')
+})
+
+header_media_close.addEventListener('click', () => {
+  header_media_bg.classList.remove('active')
+  header_media.classList.remove('active')
+})
+
+header_media_bg.addEventListener('click', () => {
+  header_media_bg.classList.remove('active')
+  header_media.classList.remove('active')
+})
+
+
 try {
   let counter = 1;
 

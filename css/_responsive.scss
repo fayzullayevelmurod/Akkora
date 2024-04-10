@@ -44,6 +44,15 @@
     }
 }
 
+@media only screen and (min-width: 1100px) {
+    .header_media_bg.active, 
+    .header_media_bg 
+    .header_media, 
+    .header_media.active {
+        display: none !important;
+    }
+}
+
 @media only screen and (max-width: 1100px) {
 
     .home_title {
