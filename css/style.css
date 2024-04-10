@@ -1957,6 +1957,25 @@ header .burger_btn span {
   color: rgb(28, 82, 181);
 }
 
+.product_text {
+  margin-top: 100px;
+}
+.product_text h5 {
+  color: rgb(57, 78, 103);
+  font-family: "Golos Text", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+.product_text p {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 15px;
+}
+
 footer {
   position: relative;
   background: rgb(27, 27, 27);
@@ -2467,6 +2486,17 @@ footer .footer_bottom ul li a {
   }
   .product_template .product_template_cards .product_template_card p {
     margin-bottom: 15px;
+  }
+  .product_text {
+    margin-top: 50px;
+  }
+  .product_text h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .product_text p {
+    margin-bottom: 10px;
+    font-size: 14px;
   }
   footer {
     padding: 50px 0;
