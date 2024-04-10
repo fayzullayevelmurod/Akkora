@@ -2068,9 +2068,9 @@ header {
 
 // product_template
 .product_template {
+    margin-top: 110px;
 
     .main_container {
-        border: 1px solid blue;
         @include flex-start();
         gap: 20px;
     }
@@ -2185,7 +2185,6 @@ header {
         gap: 20px;
 
         .product_template_card {
-            border: 1px solid red;
             width: calc(100% / 3 - 15px);
 
             h5 {
@@ -2234,7 +2233,6 @@ header {
 
     .product_category {
         max-width: 330px;
-        border: 1px solid red;
 
         h6 {
             color: rgb(57, 78, 103);
@@ -2243,6 +2241,14 @@ header {
             font-weight: 600;
             line-height: 29px;
             margin-bottom: 18px;
+        }
+
+        span {
+            color: rgb(57, 78, 103);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+            margin-top: 10px;
         }
 
         .accordion {
