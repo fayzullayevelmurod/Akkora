@@ -803,6 +803,9 @@ header .header_media.active {
 .certificates .certificates_cards .certificates_card {
   width: calc(25% - 15px);
 }
+.certificates .certificates_cards .certificates_card img {
+  width: 100%;
+}
 
 .privacy_policy h6 {
   color: rgb(57, 78, 103);

@@ -946,6 +946,10 @@ header {
 
         .certificates_card {
             width: calc(100% / 4 - 15px);
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
