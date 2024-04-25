@@ -1135,6 +1135,9 @@ header .header_media.active {
   text-align: center;
   width: 100%;
 }
+.basket_goods .amount_orders .product_catalog_btn {
+  margin-top: 20px;
+}
 
 .my_account {
   padding: 110px 0;
@@ -1552,6 +1555,9 @@ header .header_media.active {
   line-height: 16px;
   text-transform: uppercase;
   border-bottom: 1px solid rgb(6, 138, 208);
+}
+.panel #address .add_address_btn {
+  margin-bottom: 20px;
 }
 .panel #anketa p {
   color: rgb(57, 78, 103);
