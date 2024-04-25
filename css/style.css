@@ -1724,7 +1724,7 @@ header .header_media.active {
   gap: 20px;
 }
 .product_page .product_page_right .product_page_btns .main_btn {
-  width: 100%;
+  width: auto;
   height: 49px;
 }
 .product_page .product_tabs .product_tabs_link {

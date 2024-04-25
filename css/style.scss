@@ -683,15 +683,8 @@ header {
         margin-bottom: 40px;
     }
 
-    // .featured_products_cards {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     gap: 20px;
-    // }
-
     .featured_products_card {
         width: 100%;
-        // width: calc(100% / 6 - 17px);
 
         h5 {
             color: rgb(57, 78, 103);
@@ -2071,7 +2064,7 @@ header {
             gap: 20px;
     
             .main_btn {
-                width: 100%;
+                width: auto;
                 height: 49px;
             }
         }
