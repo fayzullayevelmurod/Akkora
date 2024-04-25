@@ -20,6 +20,22 @@ header_media_bg.addEventListener('click', () => {
 })
 
 try {
+  let my_account_text_btn = document.querySelector('.my_account_text_btn');
+  let my_account_text_btn_one = document.querySelector('.my_account_text_btn_one');
+  let my_account_text = document.querySelector('.my_account_text');
+
+  my_account_text_btn.addEventListener('click', () => {
+    my_account_text.classList.add('active')
+  })
+
+  my_account_text_btn_one.addEventListener('click', () => {
+    my_account_text.classList.remove('active')
+  })
+} catch(err) {
+  console.log(err);
+}
+
+try {
   lightGallery(document.getElementById('static-thumbnails'), {
     animateThumb: false,
     zoomFromOrigin: false,
@@ -107,14 +123,10 @@ tabs.forEach(tab => {
 });
 
 
-let swiper = new Swiper(".popular_productSwiper", {
+let swiper = new Swiper(".featuredSwiper", {
     spaceBetween: 20,
-    navigation: {
-        nextEl: ".popular_slider-button-next",
-        prevEl: ".popular_slider-button-prev",
-    },
     breakpoints: {
-        576: {
+        300: {
             slidesPerView: 2,
             spaceBetween: 20,
         },
@@ -123,8 +135,8 @@ let swiper = new Swiper(".popular_productSwiper", {
             spaceBetween: 20,
         },
         993: {
-            slidesPerView: 4,
-            spaceBetween: 22,
+            slidesPerView: 6,
+            spaceBetween: 20,
         },
     },
 });

@@ -113,7 +113,7 @@ address {
   font-family: "Open Sans", sans-serif;
 }
 .form_input:focus {
-  border: 1px solid rgb(6, 138, 208);
+  border: 1px solid rgb(2, 92, 141);
 }
 
 .input_group {
@@ -149,7 +149,7 @@ address {
 .checkbox_group input {
   width: 24px;
   height: 24px;
-  accent-color: rgb(57, 78, 103);
+  accent-color: rgb(77, 106, 141);
 }
 .checkbox_group label {
   color: rgb(57, 78, 103);
@@ -497,7 +497,7 @@ header .header_media.active {
 }
 
 .home {
-  height: 100vh;
+  height: 85dvh;
   background-image: url("../images/home_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -526,6 +526,9 @@ header .header_media.active {
   font-size: 42px;
   font-weight: 700;
   line-height: 120%;
+}
+.home .find_link {
+  margin-top: 20px;
 }
 
 .youtube_block {
@@ -575,13 +578,8 @@ header .header_media.active {
   text-align: center;
   margin-bottom: 40px;
 }
-.featured_products .featured_products_cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 .featured_products .featured_products_card {
-  width: calc(16.6666666667% - 17px);
+  width: 100%;
 }
 .featured_products .featured_products_card h5 {
   color: rgb(57, 78, 103);
@@ -1256,6 +1254,9 @@ header .header_media.active {
   font-weight: 700;
   line-height: 22px;
 }
+.my_account_order .my_account_order_right .main_btn {
+  width: 100%;
+}
 .my_account_order ul {
   display: flex;
   flex-direction: column;
@@ -1314,6 +1315,9 @@ header .header_media.active {
   font-weight: 400;
   line-height: 140%;
   margin-bottom: 40px;
+}
+.my_account_order .my_account_text.active {
+  display: none;
 }
 
 .one_article {
