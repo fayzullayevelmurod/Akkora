@@ -19,6 +19,29 @@ header_media_bg.addEventListener('click', () => {
   header_media.classList.remove('active')
 })
 
+let modal_btn = document.querySelectorAll('.modal_btn');
+let modal_bg = document.querySelector('.modal_bg');
+let modal = document.querySelector('.modal');
+let modal_close = document.querySelector('.modal_close');
+
+
+modal_btn.forEach(item => {
+  item.addEventListener('click', () => {
+    modal_bg.classList.add('active')
+    modal.classList.add('active')
+  })
+})
+
+modal_bg.addEventListener('click', () => {
+  modal_bg.classList.remove('active')
+  modal.classList.remove('active')
+})
+
+modal_close.addEventListener('click', () => {
+  modal_bg.classList.remove('active')
+  modal.classList.remove('active')
+})
+
 try {
   let my_account_text_btn = document.querySelector('.my_account_text_btn');
   let my_account_text_btn_one = document.querySelector('.my_account_text_btn_one');
