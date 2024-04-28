@@ -121,6 +121,10 @@
                 display: none;
             }
 
+            .modal_btn {
+                display: none;
+            }
+
         }
 
         .burger_btn {
@@ -924,6 +928,31 @@
 }
 
 @media only screen and (max-width: 576px) {
+
+    header {
+        .shop_btn {
+            font-size: 12px;
+
+            .shop_btn_icon {
+                img {
+                    width: 20px;
+                }
+            }
+
+            .shop_btn_number {
+                width: 12px;
+                height: 12px;
+
+                span {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .burger_btn {
+            margin-left: 30px;
+        }
+    }
 
     .home {
         h1 {

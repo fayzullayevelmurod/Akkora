@@ -457,9 +457,9 @@ header .header_media .header_top_left span {
   font-size: 14px;
 }
 header .header_media .header_top_center {
-  flex-direction: column;
   margin-bottom: 15px;
-  justify-content: start;
+  gap: 20px;
+  justify-content: center;
 }
 header .header_media .header_top_center .find_link,
 header .header_media .header_top_center .header_search {
@@ -471,6 +471,9 @@ header .header_media .header_top_center .find_link {
 }
 header .header_media .header_top_center .header_search {
   width: 20px;
+}
+header .header_media .header_top_center .modal_btn {
+  display: block;
 }
 header .header_media .nav_link {
   display: flex;
@@ -688,6 +691,9 @@ header .header_media.active {
   position: relative;
   z-index: 2;
   padding: 195px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .brand_in {
@@ -2289,6 +2295,9 @@ footer .footer_bottom ul li a {
   header .header_top_center .header_search {
     display: none;
   }
+  header .header_top_center .modal_btn {
+    display: none;
+  }
   header .burger_btn {
     margin-left: 50px;
     display: flex;
@@ -2842,6 +2851,22 @@ footer .footer_bottom ul li a {
   }
 }
 @media only screen and (max-width: 576px) {
+  header .shop_btn {
+    font-size: 12px;
+  }
+  header .shop_btn .shop_btn_icon img {
+    width: 20px;
+  }
+  header .shop_btn .shop_btn_number {
+    width: 12px;
+    height: 12px;
+  }
+  header .shop_btn .shop_btn_number span {
+    font-size: 10px;
+  }
+  header .burger_btn {
+    margin-left: 30px;
+  }
   .home h1 {
     font-size: 35px;
   }
