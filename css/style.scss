@@ -2179,6 +2179,9 @@ header {
     }
 
     .product_page_left {
+        max-width: 330px;
+        overflow: hidden;
+        display: flex;
         img {
             min-width: 330px;
         }

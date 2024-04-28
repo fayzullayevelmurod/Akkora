@@ -1042,6 +1042,16 @@
         }
     }
 
+    .product_page {
+        .product_page_left {
+            max-width: 100%;
+
+            img {
+                min-width: 300px;
+            }
+        }
+    }
+
     .contact {
         
         

@@ -1825,6 +1825,11 @@ header .header_media.active {
   line-height: 140%;
   margin-bottom: 40px;
 }
+.product_page .product_page_left {
+  max-width: 330px;
+  overflow: hidden;
+  display: flex;
+}
 .product_page .product_page_left img {
   min-width: 330px;
 }
@@ -3051,6 +3056,12 @@ footer .footer_bottom ul li a {
   }
   .modal input, .modal textarea {
     font-size: 12px;
+  }
+  .product_page .product_page_left {
+    max-width: 100%;
+  }
+  .product_page .product_page_left img {
+    min-width: 300px;
   }
   .contact form {
     width: 100%;
