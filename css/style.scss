@@ -262,6 +262,36 @@ address {
     }
 }
 
+.select {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 38px;
+    
+    padding-left: 10px;
+    padding-right: 25px;
+    
+    margin: 0;
+    
+    border: 1px solid #cbd1d4;
+    background-color: #f9f9f9;
+    
+    font-size: 14px;
+    font-family: Arial,sans-serif;
+    color: #333333;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    background-image: url("https://netology-code.github.io/html-2-homeworks/form-elements/city-select/img/select-arrows.svg");
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+  
+    &:focus {
+    outline:transparent;
+    }
+}
+
 // header
 header {
     background: #fff;
@@ -586,7 +616,6 @@ header {
     .header_media.active {
         right: 0;
     }
-
 }
 // header
 
