@@ -18,6 +18,24 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="modal_bg"></div>
+
+        <div class="modal">
+            <button class="modal_close">
+                <img src="./images/icons/Plus.svg" alt="">
+            </button>
+            <form action="#">
+                <h4>
+                    Обратная связь
+                </h4>
+                <input type="text" name="name" id="name" placeholder="Ваше имя">
+                <input type="email" name="email" id="email" placeholder="Ваш email">
+                <textarea name="message" id="message" placeholder="Ваш текст сообщение"></textarea>
+                <button type="submit" class="main_btn" id="submit">
+                    Отправить
+                </button>
+            </form>
+        </div>
 
         <!-- header -->
         <header id="header">
@@ -36,16 +54,23 @@
                         <a href="mailto:akkorarucom@mail.ru">
                             akkorarucom@mail.ru
                         </a>
+                        <label class="select-group">
+                            <select class="select">
+                              <option value="moscow" selected>Москва</option>
+                              <option value="st-petersburg">Санкт-Петербург</option>
+                              <option value="kazan">Казань</option>
+                            </select>
+                        </label>
                     </div>
                     <div class="header_top_center">
                         <a class="header_logo" href="/">
                             <img src="./images/logo/header_logo.svg" alt="">
                         </a>
-                        <a class="find_link" href="#">
-                            Подбор масла по марке и допуску
-                        </a>
                         <button class="header_search">
                             <img src="./images/icons/search_icon.svg" alt="">
+                        </button>
+                        <button class="modal_btn main_btn">
+                            обратную связь
                         </button>
                     </div>
                     <button class="shop_btn">
@@ -279,14 +304,21 @@
                     <a href="mailto:akkorarucom@mail.ru">
                         akkorarucom@mail.ru
                     </a>
+                    <label class="select-group">
+                        <select class="select">
+                          <option value="moscow" selected>Москва</option>
+                          <option value="st-petersburg">Санкт-Петербург</option>
+                          <option value="kazan">Казань</option>
+                        </select>
+                    </label>
                 </div>
                 <div class="header_top_center">
-                    <a class="find_link" href="#">
-                        Подбор масла по марке и допуску
-                    </a>
                     <button class="header_search">
                         <img src="./images/icons/search_icon.svg" alt="">
                     </button>
+                    <button class="modal_btn main_btn">
+                        обратную связь
+                    </button>   
                 </div>
                 <ul class="nav_link">
                     <li class="nav_item">
