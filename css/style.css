@@ -3052,4 +3052,14 @@ footer .footer_bottom ul li a {
   .modal input, .modal textarea {
     font-size: 12px;
   }
+  .contact form {
+    width: 100%;
+    gap: 10px;
+  }
+  .contact form h4 {
+    font-size: 18px;
+  }
+  .contact form input, .contact form textarea {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */

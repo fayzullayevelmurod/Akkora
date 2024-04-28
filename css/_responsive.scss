@@ -1041,4 +1041,21 @@
             font-size: 12px;
         }
     }
+
+    .contact {
+        
+        
+        form {
+            width: 100%;
+            gap: 10px;
+
+            h4 {
+                font-size: 18px;
+            }
+            input, textarea {
+                font-size: 12px;
+            }
+        }
+
+    }
 }
