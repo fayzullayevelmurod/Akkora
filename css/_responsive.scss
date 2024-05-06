@@ -895,6 +895,12 @@
         }
     }
 
+    .contact {
+        .main_container {
+            flex-direction: column;
+        }
+    }
+
     footer {
         .main_container {
             display: flex;
