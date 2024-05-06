@@ -702,13 +702,13 @@ header {
 
 // home
 .home {
-    height: 85dvh;
     background-image: url('../images/home_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
 
     .main_container {
+        padding: 100px 20px;
         height: 100%;
         flex-direction: column;
         @include flex-full-center();
