@@ -126,7 +126,7 @@ on('click', '.selectBtn', item => {
 on('click', '.option', item => {
 	item.target.parentElement.classList.remove('toggle');
 
-	const parent = item.target.closest('.select').children[0];
+	const parent = item.target.closest('.catalog_select').children[0];
 	parent.setAttribute('data-type', item.target.getAttribute('data-type'));
 	parent.innerText = item.target.innerText;
 })

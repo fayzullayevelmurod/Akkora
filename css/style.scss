@@ -2422,11 +2422,11 @@ header {
             text-transform: uppercase;
         }
 
-        .select {
+        .catalog_select {
             position: relative;
         }
 
-        .select .selectBtn {
+        .catalog_select .selectBtn {
             margin-bottom: 5px;
             white-space: nowrap;
             text-align: left;
@@ -2446,7 +2446,7 @@ header {
             border-radius: 4px;
         }
 
-        .select .selectBtn:after {
+        .catalog_select .selectBtn:after {
             content: "";
             position: absolute;
             top: 45%;
@@ -2460,12 +2460,12 @@ header {
             transition: 0.2s ease;
         }
 
-        .select .selectBtn.toggle:after {
+        .catalog_select .selectBtn.toggle:after {
             -webkit-transform: translateY(-50%) rotate(-135deg);
                     transform: translateY(-50%) rotate(-135deg);
         }
 
-        .select .selectDropdown {
+        .catalog_select .selectDropdown {
             display: flex;
             flex-direction: column;
             gap: 2px;
@@ -2485,7 +2485,7 @@ header {
             transition: 0.2s ease;
         }
 
-        .select .selectDropdown .option {
+        .catalog_select .selectDropdown .option {
             white-space: nowrap;
             padding: 2px 35px;
             text-align: left;
@@ -2496,12 +2496,12 @@ header {
             line-height: 140%;
         }
 
-        .select .selectDropdown .option:hover {
+        .catalog_select .selectDropdown .option:hover {
             background: rgb(57, 78, 103);
             color: #fff;
         }
 
-        .select .selectDropdown.toggle {
+        .catalog_select .selectDropdown.toggle {
             visibility: visible;
             -webkit-transform: scale(1, 1);
                     transform: scale(1, 1);

@@ -2030,10 +2030,10 @@ header .header_media.active {
   line-height: 140%;
   text-transform: uppercase;
 }
-.product_template .product_template_title .select {
+.product_template .product_template_title .catalog_select {
   position: relative;
 }
-.product_template .product_template_title .select .selectBtn {
+.product_template .product_template_title .catalog_select .selectBtn {
   margin-bottom: 5px;
   white-space: nowrap;
   text-align: left;
@@ -2051,7 +2051,7 @@ header .header_media.active {
   line-height: 140%;
   border-radius: 4px;
 }
-.product_template .product_template_title .select .selectBtn:after {
+.product_template .product_template_title .catalog_select .selectBtn:after {
   content: "";
   position: absolute;
   top: 45%;
@@ -2063,10 +2063,10 @@ header .header_media.active {
   border-bottom: 2px solid #666;
   transition: 0.2s ease;
 }
-.product_template .product_template_title .select .selectBtn.toggle:after {
+.product_template .product_template_title .catalog_select .selectBtn.toggle:after {
   transform: translateY(-50%) rotate(-135deg);
 }
-.product_template .product_template_title .select .selectDropdown {
+.product_template .product_template_title .catalog_select .selectDropdown {
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -2083,7 +2083,7 @@ header .header_media.active {
   visibility: hidden;
   transition: 0.2s ease;
 }
-.product_template .product_template_title .select .selectDropdown .option {
+.product_template .product_template_title .catalog_select .selectDropdown .option {
   white-space: nowrap;
   padding: 2px 35px;
   text-align: left;
@@ -2093,11 +2093,11 @@ header .header_media.active {
   font-weight: 400;
   line-height: 140%;
 }
-.product_template .product_template_title .select .selectDropdown .option:hover {
+.product_template .product_template_title .catalog_select .selectDropdown .option:hover {
   background: rgb(57, 78, 103);
   color: #fff;
 }
-.product_template .product_template_title .select .selectDropdown.toggle {
+.product_template .product_template_title .catalog_select .selectDropdown.toggle {
   visibility: visible;
   transform: scale(1, 1);
 }
