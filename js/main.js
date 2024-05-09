@@ -47,6 +47,38 @@ try {
 }
 
 try {
+  let choose_city_btn = document.querySelectorAll('.choose_city_btn');
+  let modal_bg = document.querySelector('.modal_bg');
+  let city_modal = document.querySelector('.city_modal');
+  let city_modal_close = document.querySelector('.city_modal_close');
+
+
+  choose_city_btn.forEach(city_btn => {
+    city_btn.addEventListener('click', () => {
+      modal_bg.classList.add('active')
+      city_modal.classList.add('active')
+    })
+  })
+
+  modal_bg.addEventListener('click', () => {
+    modal_bg.classList.remove('active')
+    city_modal.classList.remove('active')
+  })
+
+  city_modal_close.addEventListener('click', () => {
+    modal_bg.classList.remove('active')
+    city_modal.classList.remove('active')
+  })
+
+  city_modal.addEventListener('click', () => {
+    modal_bg.classList.remove('active')
+    city_modal.classList.remove('active')
+  })
+} catch(err) {
+  console.log(err);
+}
+
+try {
   let my_account_text_btn = document.querySelector('.my_account_text_btn');
   let my_account_text_btn_one = document.querySelector('.my_account_text_btn_one');
   let my_account_text = document.querySelector('.my_account_text');

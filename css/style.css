@@ -312,6 +312,41 @@ address {
   height: 100px;
 }
 
+.city_modal {
+  display: none;
+  padding: 30px 20px 20px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 9;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.city_modal .city_modal_close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.city_modal .city_modal_close img {
+  transform: rotate(45deg);
+}
+.city_modal ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.city_modal ul a {
+  color: rgb(57, 78, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.city_modal.active {
+  display: block;
+}
+
 .modal.active {
   display: block;
 }
